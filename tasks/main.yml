@@ -1,0 +1,82 @@
+# Standards: 0.1
+---
+- name: Create required directories
+  loop:
+    - /usr/share/adminer
+  file:
+    path: "{{ item }}"
+    owner: "{{ adminer_owner }}"
+    group: "{{ adminer_group }}"
+    state: directory
+  tags:
+    - adminer
+
+- name: Install required packages
+  loop: "{{ (adminer_mysql_packages if adminer_mysql else adminer_general_packages) + adminer_extra_packages }}"
+  notify:
+    - Restart apache
+  package:
+    name: "{{ item }}"
+    state: present
+  tags:
+    - adminer
+
+- name: Write php config
+  loop: "{{ adminer_php_paths }}"
+  notify:
+    - Restart apache
+  template:
+    src: php.j2
+    dest: "{{ item }}"
+    owner: root
+    group: root
+    mode: u=rw,g=r,o=r
+  tags:
+    - adminer
+
+- name: Download release file
+  get_url:
+    url: "{{ adminer_download }}"
+    dest: "/usr/share/adminer/adminer.php"
+    owner: "{{ adminer_owner }}"
+    group: "{{ adminer_group }}"
+    mode: u=rwx,g=r,o=r
+  tags:
+    - adminer
+
+- name: Download plugin files
+  loop: "{{ adminer_base_plugins + adminer_general_plugins }}"
+  loop_control:
+    label: "{{ item.name }}"
+  when: item.state | default('present') == 'present'
+  get_url:
+    url: "{{ item.url | default(omit) }}"
+    dest: "/usr/share/adminer/{{ item.name }}.php"
+    owner: "{{ adminer_owner }}"
+    group: "{{ adminer_group }}"
+    mode: u=rwx,g=r,o=r
+  tags:
+    - adminer
+
+- name: Delete plugin files
+  loop: "{{ adminer_base_plugins + adminer_general_plugins }}"
+  loop_control:
+    label: "{{ item.name }}"
+  when: item.state | default('present') == 'absent'
+  file:
+    path: "/usr/share/adminer/{{ item.name }}.php"
+    state: absent
+  tags:
+    - adminer
+
+- name: Write plugin wrapper
+  template:
+    src: wrapper.j2
+    dest: "{{ adminer_destination }}"
+    owner: "{{ adminer_owner }}"
+    group: "{{ adminer_group }}"
+    mode: u=rwx,g=r,o=r
+  tags:
+    - adminer
+
+...

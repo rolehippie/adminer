@@ -1,0 +1,39 @@
+# Standards: 1.2
+---
+# @meta author:value: [Thomas Boerger](https://github.com/tboerger)
+# @meta description: >
+# [![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/adminer)
+# [![Build Status](https://img.shields.io/drone/build/rolehippie/adminer/master?logo=drone)](https://cloud.drone.io/rolehippie/adminer)
+# [![License: Apache-2.0](https://img.shields.io/github/license/rolehippie/adminer)](https://github.com/rolehippie/adminer/blob/master/LICENSE)
+#
+# Ansible role to install Adminer database management.
+#
+# ## Sponsor
+#
+# [![Proact Deutschland GmbH](https://proact.eu/wp-content/uploads/2020/03/proact-logo.png)](https://proact.eu)
+#
+# Building and improving this Ansible role have been sponsored by my employer **Proact Deutschland GmbH**.
+# @end
+# @meta dependencies:value: >
+# [rolehippie.docker](https://github.com/rolehippie/docker)
+# @end
+galaxy_info:
+  author: Thomas Boerger
+  description: Ansible role to install Adminer database management
+  license: Apache-2.0
+  min_ansible_version: 2.10
+  platforms:
+    - name: Ubuntu
+      versions:
+        - bionic
+        - focal
+  galaxy_tags:
+    - database
+    - mysql
+    - mariadb
+    - postgresql
+    - sqlite
+
+dependencies: []
+
+...

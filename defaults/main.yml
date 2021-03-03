@@ -1,0 +1,72 @@
+# Standards: 0.1
+---
+# @var adminer_version:description: Version of the release to install
+adminer_version: 4.7.7
+
+# @var adminer_mysql:description: Install with mysql support only
+adminer_mysql: False
+
+# @var adminer_language:description: Install with single translation
+adminer_language:
+
+# @var adminer_download:description: URL to download the release from
+adminer_download: "https://github.com/vrana/adminer/releases/download/v{{ adminer_version }}/adminer-{{ adminer_version }}{{ '-mysql' if adminer_mysql else '' }}{{ '-' + adminer_language if adminer_language | default(False) else '' }}.php"
+
+# @var adminer_mysql_packages:description: List of packages for mysql databases
+adminer_mysql_packages:
+  - php
+  - php-mysql
+
+# @var adminer_general_packages:description: List of packages for general databases
+adminer_general_packages:
+  - php
+  - php-mysql
+  - php-sqlite3
+  - php-pgsql
+  - php-mongodb
+
+# @var adminer_extra_packages:description: List of extra packages to install
+adminer_extra_packages: []
+
+# @var adminser_download:description: Destination path where to install
+adminer_destination: /var/www/html/index.php
+
+# @var adminser_download:description: Owner of the destination path
+adminer_owner: www-data
+
+# @var adminser_download:description: Group of the destination path
+adminer_group: www-data
+
+# @var adminer_base_plugins:description: List of required base plugins
+adminer_base_plugins:
+  - name: plugin
+    url: https://raw.githubusercontent.com/vrana/adminer/master/plugins/plugin.php
+    class: AdminerPlugin
+
+# @var adminer_general_plugins:description: List of plugins to install
+# @var adminer_general_plugins:example: >
+# adminer_general_plugins:
+#   - name: login-servers
+#     url: https://raw.githubusercontent.com/pematon/adminer-plugins/master/AdminerLoginServers.php
+#     class: AdminerLoginServers
+#     config: |
+#       [
+#         'mysql://database-01:3306' => 'Database 01',
+#         'mysql://database-02:3306' => 'Database 02',
+#       ]
+# @end
+adminer_general_plugins: []
+
+# @var adminer_php_paths:description: Paths to write the custom PHP config to
+adminer_php_paths:
+  - /etc/php/7.4/apache2/conf.d/99-adminer.ini
+  - /etc/php/7.4/cli/conf.d/99-adminer.ini
+  - /etc/php/7.4/mods-available/adminer.ini
+
+# @var adminer_memory_limit:description: Max allowed memory to allocate by PHP
+adminer_memory_limit: 256M
+
+# @var adminer_max_upload_size:description: Max allowed size for uploads/imports/dumps
+adminer_max_upload_size: 256M
+
+...
