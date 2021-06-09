@@ -16,7 +16,7 @@ function adminer_object() {
     $plugins = array(
 {% for item in adminer_general_plugins %}{% if item.state | default('present') == 'present' %}
         new {{ item.class }}{% if item.config %}(
-            {{ item.config | trim | indent(width=12, indentfirst=False) }}
+            {{ item.config | trim | indent(width=12, first=False) }}
         ){% endif %},
 {% endif %}{% endfor %}
     );

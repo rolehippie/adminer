@@ -1,4 +1,4 @@
-# Standards: 0.1
+# Standards: 1.2
 ---
 # @var adminer_version:description: Version of the release to install
 adminer_version: 4.7.7
