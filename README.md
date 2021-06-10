@@ -1,6 +1,6 @@
 # adminer
 
-[![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/adminer) [![Build Status](https://img.shields.io/drone/build/rolehippie/adminer/master?logo=drone)](https://cloud.drone.io/rolehippie/adminer) [![License: Apache-2.0](https://img.shields.io/github/license/rolehippie/adminer)](https://github.com/rolehippie/adminer/blob/master/LICENSE) 
+[![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/adminer) [![Testing Build](https://github.com/rolehippie/adminer/workflows/testing/badge.svg)](https://github.com/rolehippie/adminer/actions?query=workflow%3Atesting) [![Readme Build](https://github.com/rolehippie/adminer/workflows/readme/badge.svg)](https://github.com/rolehippie/adminer/actions?query=workflow%3Areadme) [![Galaxy Build](https://github.com/rolehippie/adminer/workflows/galaxy/badge.svg)](https://github.com/rolehippie/adminer/actions?query=workflow%3Agalaxy) [![License: Apache-2.0](https://img.shields.io/github/license/rolehippie/adminer)](https://github.com/rolehippie/adminer/blob/master/LICENSE) 
 
 Ansible role to install Adminer database management. 
 
@@ -27,6 +27,7 @@ Building and improving this Ansible role have been sponsored by my employer **Pr
   * [adminer_mysql_packages](#adminer_mysql_packages)
   * [adminer_owner](#adminer_owner)
   * [adminer_php_paths](#adminer_php_paths)
+  * [adminer_php_versions](#adminer_php_versions)
   * [adminer_version](#adminer_version)
   * [adminser_download](#adminser_download)
 * [Dependencies](#dependencies)
@@ -195,9 +196,23 @@ Paths to write the custom PHP config to
 
 ```YAML
 adminer_php_paths:
-  - /etc/php/7.4/apache2/conf.d/99-adminer.ini
-  - /etc/php/7.4/cli/conf.d/99-adminer.ini
-  - /etc/php/7.4/mods-available/adminer.ini
+  - /etc/php/{{ adminer_php_versions[ansible_distribution_version] }}/apache2/conf.d/99-adminer.ini
+  - /etc/php/{{ adminer_php_versions[ansible_distribution_version] }}/cli/conf.d/99-adminer.ini
+  - /etc/php/{{ adminer_php_versions[ansible_distribution_version] }}/mods-available/adminer.ini
+```
+
+### adminer_php_versions
+
+Mapping of the available PHP versions on Ubuntu
+
+#### Default value
+
+```YAML
+adminer_php_versions:
+  18.04: 7.2
+  20.04: 7.4
+  20.1: 7.4
+  21.04: 7.4
 ```
 
 ### adminer_version
