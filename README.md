@@ -27,6 +27,7 @@ Building and improving this Ansible role have been sponsored by my employer **Pr
   * [adminer_mysql_packages](#adminer_mysql_packages)
   * [adminer_owner](#adminer_owner)
   * [adminer_php_paths](#adminer_php_paths)
+  * [adminer_php_versions](#adminer_php_versions)
   * [adminer_version](#adminer_version)
   * [adminser_download](#adminser_download)
 * [Dependencies](#dependencies)
@@ -195,9 +196,23 @@ Paths to write the custom PHP config to
 
 ```YAML
 adminer_php_paths:
-  - /etc/php/7.4/apache2/conf.d/99-adminer.ini
-  - /etc/php/7.4/cli/conf.d/99-adminer.ini
-  - /etc/php/7.4/mods-available/adminer.ini
+  - /etc/php/{{ adminer_php_versions[ansible_distribution_version] }}/apache2/conf.d/99-adminer.ini
+  - /etc/php/{{ adminer_php_versions[ansible_distribution_version] }}/cli/conf.d/99-adminer.ini
+  - /etc/php/{{ adminer_php_versions[ansible_distribution_version] }}/mods-available/adminer.ini
+```
+
+### adminer_php_versions
+
+Mapping of the available PHP versions on Ubuntu
+
+#### Default value
+
+```YAML
+adminer_php_versions:
+  18.04: 7.2
+  20.04: 7.4
+  20.1: 7.4
+  21.04: 7.4
 ```
 
 ### adminer_version

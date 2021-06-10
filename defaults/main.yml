@@ -59,14 +59,21 @@ adminer_general_plugins: []
 
 # @var adminer_php_paths:description: Paths to write the custom PHP config to
 adminer_php_paths:
-  - /etc/php/7.4/apache2/conf.d/99-adminer.ini
-  - /etc/php/7.4/cli/conf.d/99-adminer.ini
-  - /etc/php/7.4/mods-available/adminer.ini
+  - "/etc/php/{{ adminer_php_versions[ansible_distribution_version] }}/apache2/conf.d/99-adminer.ini"
+  - "/etc/php/{{ adminer_php_versions[ansible_distribution_version] }}/cli/conf.d/99-adminer.ini"
+  - "/etc/php/{{ adminer_php_versions[ansible_distribution_version] }}/mods-available/adminer.ini"
 
 # @var adminer_memory_limit:description: Max allowed memory to allocate by PHP
 adminer_memory_limit: 256M
 
 # @var adminer_max_upload_size:description: Max allowed size for uploads/imports/dumps
 adminer_max_upload_size: 256M
+
+# @var adminer_php_versions:description: Mapping of the available PHP versions on Ubuntu
+adminer_php_versions:
+  "18.04": 7.2
+  "20.04": 7.4
+  "20.10": 7.4
+  "21.04": 7.4
 
 ...
