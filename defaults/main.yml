@@ -39,9 +39,20 @@ adminer_owner: www-data
 adminer_group: www-data
 
 # @var adminer_base_plugins:description: List of required base plugins
+# @var adminer_base_plugins:example: >
+# adminer_base_plugins:
+#   - name: login-servers
+#     url: https://raw.githubusercontent.com/pematon/adminer-plugins/master/AdminerLoginServers.php
+#     class: AdminerLoginServers
+#     config: |
+#       [
+#         'mysql://database-01:3306' => 'Database 01',
+#         'mysql://database-02:3306' => 'Database 02',
+#       ]
+# @end
 adminer_base_plugins:
   - name: plugin
-    url: https://raw.githubusercontent.com/vrana/adminer/master/plugins/plugin.php
+    url: https://raw.githubusercontent.com/vrana/adminer/v{{ adminer_version }}/plugins/plugin.php
     class: AdminerPlugin
 
 # @var adminer_general_plugins:description: List of plugins to install

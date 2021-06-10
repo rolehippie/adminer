@@ -1,4 +1,4 @@
-# work
+# adminer
 
 [![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/adminer) [![Testing Build](https://github.com/rolehippie/adminer/workflows/testing/badge.svg)](https://github.com/rolehippie/adminer/actions?query=workflow%3Atesting) [![Readme Build](https://github.com/rolehippie/adminer/workflows/readme/badge.svg)](https://github.com/rolehippie/adminer/actions?query=workflow%3Areadme) [![Galaxy Build](https://github.com/rolehippie/adminer/workflows/galaxy/badge.svg)](https://github.com/rolehippie/adminer/actions?query=workflow%3Agalaxy) [![License: Apache-2.0](https://img.shields.io/github/license/rolehippie/adminer)](https://github.com/rolehippie/adminer/blob/master/LICENSE) 
 
@@ -47,8 +47,22 @@ List of required base plugins
 ```YAML
 adminer_base_plugins:
   - name: plugin
-    url: https://raw.githubusercontent.com/vrana/adminer/master/plugins/plugin.php
+    url: https://raw.githubusercontent.com/vrana/adminer/v{{ adminer_version }}/plugins/plugin.php
     class: AdminerPlugin
+```
+
+#### Example usage
+
+```YAML
+adminer_base_plugins:
+  - name: login-servers
+    url: https://raw.githubusercontent.com/pematon/adminer-plugins/master/AdminerLoginServers.php
+    class: AdminerLoginServers
+    config: |
+      [
+        'mysql://database-01:3306' => 'Database 01',
+        'mysql://database-02:3306' => 'Database 02',
+      ]
 ```
 
 ### adminer_destination
