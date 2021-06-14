@@ -236,7 +236,7 @@ Version of the release to install
 #### Default value
 
 ```YAML
-adminer_version: 4.7.7
+adminer_version: 4.7.9
 ```
 
 ### adminser_download
