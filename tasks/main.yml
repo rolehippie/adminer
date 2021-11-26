@@ -7,6 +7,7 @@
     path: "{{ item }}"
     owner: "{{ adminer_owner }}"
     group: "{{ adminer_group }}"
+    mode: u=rw,g=r,o=r
     state: directory
   tags:
     - adminer
