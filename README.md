@@ -1,38 +1,39 @@
-# adminer
+# workspace
 
-[![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/adminer) [![Testing Build](https://github.com/rolehippie/adminer/workflows/testing/badge.svg)](https://github.com/rolehippie/adminer/actions?query=workflow%3Atesting) [![Readme Build](https://github.com/rolehippie/adminer/workflows/readme/badge.svg)](https://github.com/rolehippie/adminer/actions?query=workflow%3Areadme) [![Galaxy Build](https://github.com/rolehippie/adminer/workflows/galaxy/badge.svg)](https://github.com/rolehippie/adminer/actions?query=workflow%3Agalaxy) [![License: Apache-2.0](https://img.shields.io/github/license/rolehippie/adminer)](https://github.com/rolehippie/adminer/blob/master/LICENSE) 
+[![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/adminer) [![Testing Build](https://github.com/rolehippie/adminer/workflows/testing/badge.svg)](https://github.com/rolehippie/adminer/actions?query=workflow%3Atesting) [![Readme Build](https://github.com/rolehippie/adminer/workflows/readme/badge.svg)](https://github.com/rolehippie/adminer/actions?query=workflow%3Areadme) [![Galaxy Build](https://github.com/rolehippie/adminer/workflows/galaxy/badge.svg)](https://github.com/rolehippie/adminer/actions?query=workflow%3Agalaxy) [![License: Apache-2.0](https://img.shields.io/github/license/rolehippie/adminer)](https://github.com/rolehippie/adminer/blob/master/LICENSE)
 
-Ansible role to install Adminer database management. 
+Ansible role to install Adminer database management.
 
-## Sponsor 
+## Sponsor
 
-[![Proact Deutschland GmbH](https://proact.eu/wp-content/uploads/2020/03/proact-logo.png)](https://proact.eu) 
+[![Proact Deutschland GmbH](https://proact.eu/wp-content/uploads/2020/03/proact-logo.png)](https://proact.eu)
 
 Building and improving this Ansible role have been sponsored by my employer **Proact Deutschland GmbH**.
 
 ## Table of content
 
-* [Default Variables](#default-variables)
-  * [adminer_base_plugins](#adminer_base_plugins)
-  * [adminer_destination](#adminer_destination)
-  * [adminer_download](#adminer_download)
-  * [adminer_extra_packages](#adminer_extra_packages)
-  * [adminer_general_packages](#adminer_general_packages)
-  * [adminer_general_plugins](#adminer_general_plugins)
-  * [adminer_group](#adminer_group)
-  * [adminer_language](#adminer_language)
-  * [adminer_max_upload_size](#adminer_max_upload_size)
-  * [adminer_memory_limit](#adminer_memory_limit)
-  * [adminer_mysql](#adminer_mysql)
-  * [adminer_mysql_packages](#adminer_mysql_packages)
-  * [adminer_owner](#adminer_owner)
-  * [adminer_php_paths](#adminer_php_paths)
-  * [adminer_php_versions](#adminer_php_versions)
-  * [adminer_version](#adminer_version)
-  * [adminser_download](#adminser_download)
-* [Dependencies](#dependencies)
-* [License](#license)
-* [Author](#author)
+- [Default Variables](#default-variables)
+  - [adminer_base_plugins](#adminer_base_plugins)
+  - [adminer_destination](#adminer_destination)
+  - [adminer_download](#adminer_download)
+  - [adminer_extra_packages](#adminer_extra_packages)
+  - [adminer_general_packages](#adminer_general_packages)
+  - [adminer_general_plugins](#adminer_general_plugins)
+  - [adminer_group](#adminer_group)
+  - [adminer_language](#adminer_language)
+  - [adminer_max_upload_size](#adminer_max_upload_size)
+  - [adminer_memory_limit](#adminer_memory_limit)
+  - [adminer_mysql](#adminer_mysql)
+  - [adminer_mysql_packages](#adminer_mysql_packages)
+  - [adminer_owner](#adminer_owner)
+  - [adminer_php_paths](#adminer_php_paths)
+  - [adminer_php_versions](#adminer_php_versions)
+  - [adminer_version](#adminer_version)
+  - [adminser_download](#adminser_download)
+- [Discovered Tags](#discovered-tags)
+- [Dependencies](#dependencies)
+- [License](#license)
+- [Author](#author)
 
 ---
 
@@ -243,9 +244,14 @@ adminer_version: 4.7.9
 
 Group of the destination path
 
+## Discovered Tags
+
+**_adminer_**
+
+
 ## Dependencies
 
-* [rolehippie.docker](https://github.com/rolehippie/docker)
+- [rolehippie.docker](https://github.com/rolehippie/docker)
 
 ## License
 
