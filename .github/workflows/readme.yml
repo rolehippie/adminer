@@ -1,13 +1,13 @@
 ---
 name: readme
 
-on:
+'on':
   push:
     branches:
       - master
 
 jobs:
-  changes:
+  readme:
     runs-on: ubuntu-latest
 
     steps:
