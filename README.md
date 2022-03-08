@@ -29,7 +29,6 @@ Building and improving this Ansible role have been sponsored by my employer **Pr
   - [adminer_php_paths](#adminer_php_paths)
   - [adminer_php_versions](#adminer_php_versions)
   - [adminer_version](#adminer_version)
-  - [adminser_download](#adminser_download)
 - [Discovered Tags](#discovered-tags)
 - [Dependencies](#dependencies)
 - [License](#license)
@@ -68,6 +67,8 @@ adminer_base_plugins:
 
 ### adminer_destination
 
+Destination path where to install
+
 #### Default value
 
 ```YAML
@@ -76,7 +77,7 @@ adminer_destination: /var/www/html/index.php
 
 ### adminer_download
 
-Destination path where to install
+URL to download the release from
 
 #### Default value
 
@@ -136,6 +137,8 @@ adminer_general_plugins:
 ```
 
 ### adminer_group
+
+Group of the destination path
 
 #### Default value
 
@@ -197,6 +200,8 @@ adminer_mysql_packages:
 
 ### adminer_owner
 
+Owner of the destination path
+
 #### Default value
 
 ```YAML
@@ -239,10 +244,6 @@ Version of the release to install
 ```YAML
 adminer_version: 4.8.1
 ```
-
-### adminser_download
-
-Group of the destination path
 
 ## Discovered Tags
 
