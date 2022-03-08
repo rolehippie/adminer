@@ -76,7 +76,7 @@ adminer_destination: /var/www/html/index.php
 
 ### adminer_download
 
-URL to download the release from
+Destination path where to install
 
 #### Default value
 
@@ -237,7 +237,7 @@ Version of the release to install
 #### Default value
 
 ```YAML
-adminer_version: 4.7.9
+adminer_version: 4.8.1
 ```
 
 ### adminser_download
