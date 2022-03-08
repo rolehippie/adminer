@@ -29,7 +29,7 @@ adminer_general_packages:
 # @var adminer_extra_packages:description: List of extra packages to install
 adminer_extra_packages: []
 
-# @var adminser_download:description: Destination path where to install
+# @var adminer_download:description: Destination path where to install
 adminer_destination: /var/www/html/index.php
 
 # @var adminser_download:description: Owner of the destination path
