@@ -85,7 +85,6 @@ adminer_max_upload_size: 256M
 adminer_php_versions:
   "18.04": 7.2
   "20.04": 7.4
-  "20.10": 7.4
-  "21.04": 7.4
+  "22.04": 8.1
 
 ...
