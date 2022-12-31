@@ -229,8 +229,7 @@ Mapping of the available PHP versions on Ubuntu
 adminer_php_versions:
   '18.04': 7.2
   '20.04': 7.4
-  '20.10': 7.4
-  '21.04': 7.4
+  '22.04': 8.1
 ```
 
 ### adminer_version
