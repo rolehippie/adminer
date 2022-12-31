@@ -6,5 +6,5 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
 ).get_hosts("all")
 
 
-def test_dummy(host):
-    assert True
+def test_executable(host):
+    assert host.file("/usr/share/adminer/adminer.php").is_file

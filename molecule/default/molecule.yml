@@ -11,32 +11,30 @@ driver:
   name: docker
 
 platforms:
+  - name: adminer-ubuntu-22
+    image: geerlingguy/docker-ubuntu2204-ansible:latest
+    hostname: ubuntu
+    privileged: True
+    pre_build_image: True
+    cgroupns_mode: host
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
   - name: adminer-ubuntu-20
-    image: mpaivabarbosa/molecule-systemd-ubuntu:20.04
+    image: geerlingguy/docker-ubuntu2004-ansible:latest
     hostname: ubuntu
     privileged: True
     pre_build_image: True
-    override_command: False
-    tmpfs:
-      - /run
-      - /tmp
+    cgroupns_mode: host
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
-    environment:
-      container: docker
   - name: adminer-ubuntu-18
-    image: mpaivabarbosa/molecule-systemd-ubuntu:18.04
+    image: geerlingguy/docker-ubuntu1804-ansible:latest
     hostname: ubuntu
     privileged: True
     pre_build_image: True
-    override_command: False
-    tmpfs:
-      - /run
-      - /tmp
+    cgroupns_mode: host
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
-    environment:
-      container: docker
 
 provisioner:
   name: ansible
