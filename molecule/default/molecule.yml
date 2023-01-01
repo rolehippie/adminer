@@ -18,8 +18,9 @@ platforms:
     pre_build_image: True
     cgroupns_mode: host
     tmpfs:
-      - /run
       - /tmp
+      - /run
+      - /run/lock
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup
     environment:
@@ -31,8 +32,9 @@ platforms:
     pre_build_image: True
     cgroupns_mode: host
     tmpfs:
-      - /run
       - /tmp
+      - /run
+      - /run/lock
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup
     environment:
@@ -44,8 +46,9 @@ platforms:
     pre_build_image: True
     cgroupns_mode: host
     tmpfs:
-      - /run
       - /tmp
+      - /run
+      - /run/lock
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup
     environment:
