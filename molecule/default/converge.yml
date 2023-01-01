@@ -2,6 +2,8 @@
 ---
 - name: Converge
   hosts: all
+  vars:
+    apache_exporter_enabled: False
   roles:
     - role: rolehippie.apache
     - role: rolehippie.adminer
