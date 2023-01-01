@@ -249,7 +249,7 @@ adminer_version: 4.8.1
 
 ## Dependencies
 
-- [rolehippie.docker](https://github.com/rolehippie/docker)
+- [rolehippie.apache](https://github.com/rolehippie/apache)
 
 ## License
 
