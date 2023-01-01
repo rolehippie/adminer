@@ -16,6 +16,7 @@ platforms:
     hostname: ubuntu
     privileged: True
     pre_build_image: True
+    override_command: False
     cgroupns_mode: host
     tmpfs:
       - /tmp
@@ -30,6 +31,7 @@ platforms:
     hostname: ubuntu
     privileged: True
     pre_build_image: True
+    override_command: False
     cgroupns_mode: host
     tmpfs:
       - /tmp
@@ -44,6 +46,7 @@ platforms:
     hostname: ubuntu
     privileged: True
     pre_build_image: True
+    override_command: False
     cgroupns_mode: host
     tmpfs:
       - /tmp
