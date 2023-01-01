@@ -17,24 +17,39 @@ platforms:
     privileged: True
     pre_build_image: True
     cgroupns_mode: host
+    tmpfs:
+      - /run
+      - /tmp
     volumes:
-      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+      - /sys/fs/cgroup:/sys/fs/cgroup
+    environment:
+      container: docker
   - name: adminer-ubuntu-20
     image: geerlingguy/docker-ubuntu2004-ansible:latest
     hostname: ubuntu
     privileged: True
     pre_build_image: True
     cgroupns_mode: host
+    tmpfs:
+      - /run
+      - /tmp
     volumes:
-      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+      - /sys/fs/cgroup:/sys/fs/cgroup
+    environment:
+      container: docker
   - name: adminer-ubuntu-18
     image: geerlingguy/docker-ubuntu1804-ansible:latest
     hostname: ubuntu
     privileged: True
     pre_build_image: True
     cgroupns_mode: host
+    tmpfs:
+      - /run
+      - /tmp
     volumes:
-      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+      - /sys/fs/cgroup:/sys/fs/cgroup
+    environment:
+      container: docker
 
 provisioner:
   name: ansible
