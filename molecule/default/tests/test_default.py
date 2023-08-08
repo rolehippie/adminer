@@ -7,5 +7,5 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
 
 
 def test_is_installed(host):
-    host.file("/usr/share/adminer/adminer.php")
+    file = host.file("/usr/share/adminer/adminer.php")
     assert file.is_file
