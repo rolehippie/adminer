@@ -1,7 +1,6 @@
-# Standards: 1.2
 ---
 - name: Restart apache
-  systemd:
+  ansible.builtin.systemd:
     name: apache2
     state: restarted
     daemon_reload: yes
