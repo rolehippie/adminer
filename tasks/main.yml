@@ -2,7 +2,7 @@
 - name: Create required directories
   loop:
     - /usr/share/adminer
-  file:
+  ansible.builtin.file:
     path: "{{ item }}"
     owner: "{{ adminer_owner }}"
     group: "{{ adminer_group }}"
@@ -15,7 +15,7 @@
   loop: "{{ (adminer_mysql_packages if adminer_mysql else adminer_general_packages) + adminer_extra_packages }}"
   notify:
     - Restart apache
-  package:
+  ansible.builtin.package:
     name: "{{ item }}"
     state: present
   tags:
@@ -25,7 +25,7 @@
   loop: "{{ adminer_php_paths }}"
   notify:
     - Restart apache
-  template:
+  ansible.builtin.template:
     src: php.j2
     dest: "{{ item }}"
     owner: root
@@ -35,7 +35,7 @@
     - adminer
 
 - name: Download release file
-  get_url:
+  ansible.builtin.get_url:
     url: "{{ adminer_download }}"
     dest: "/usr/share/adminer/adminer.php"
     owner: "{{ adminer_owner }}"
@@ -49,7 +49,7 @@
   loop_control:
     label: "{{ item.name }}"
   when: item.state | default('present') == 'present'
-  get_url:
+  ansible.builtin.get_url:
     url: "{{ item.url | default(omit) }}"
     dest: "/usr/share/adminer/{{ item.name }}.php"
     owner: "{{ adminer_owner }}"
@@ -63,14 +63,14 @@
   loop_control:
     label: "{{ item.name }}"
   when: item.state | default('present') == 'absent'
-  file:
+  ansible.builtin.file:
     path: "/usr/share/adminer/{{ item.name }}.php"
     state: absent
   tags:
     - adminer
 
 - name: Write plugin wrapper
-  template:
+  ansible.builtin.template:
     src: wrapper.j2
     dest: "{{ adminer_destination }}"
     owner: "{{ adminer_owner }}"
