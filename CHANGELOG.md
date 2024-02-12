@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.0.0](https://github.com/rolehippie/adminer/compare/v1.0.0...v2.0.0) (2024-02-12)
+
+
+### Features
+
+* drop support for ubuntu 18.04 ([b8661bb](https://github.com/rolehippie/adminer/commit/b8661bb97c63ee1b92f9e050fa6058a49e4e5693))
+* used full qualified collection names ([538885f](https://github.com/rolehippie/adminer/commit/538885f32ff95e745714e95107fe59e199dba517))
+
 ## 1.0.0 (2023-01-03)
 
 ### Features
