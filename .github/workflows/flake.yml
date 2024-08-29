@@ -28,6 +28,10 @@ jobs:
         id: flake
         run: nix flake update
 
+      - name: Source rebase
+        id: rebase
+        run: git pull --auto-stash --rebase
+
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:
