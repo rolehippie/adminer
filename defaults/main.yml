@@ -1,7 +1,7 @@
 ---
 # @var adminer_version:description: Version of the release to install
 # renovate: datasource=github-releases depName=vrana/adminer
-adminer_version: 5.0.5
+adminer_version: 5.0.6
 
 # @var adminer_mysql:description: Install with mysql support only
 adminer_mysql: False
