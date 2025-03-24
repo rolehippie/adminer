@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.2](https://github.com/rolehippie/adminer/compare/v3.0.1...v3.0.2) (2025-03-24)
+
+
+### Bugfixes
+
+* **deps:** update dependency vrana/adminer to v5.0.6 ([#35](https://github.com/rolehippie/adminer/issues/35)) ([c2b4c74](https://github.com/rolehippie/adminer/commit/c2b4c74d45124e42c1781f5a0d18299a517d2a06))
+
 ## [3.0.1](https://github.com/rolehippie/adminer/compare/v3.0.0...v3.0.1) (2025-03-17)
 
 
