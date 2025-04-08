@@ -57,6 +57,8 @@ adminer_base_plugins:
   - name: plugin
     url: https://raw.githubusercontent.com/vrana/adminer/v{{ adminer_version }}/plugins/plugin.php
     class: AdminerPlugin
+    state: "{{ 'present' if adminer_version is version('5.1.1', '<=') else 'absent'
+      }}"
 ```
 
 #### Example usage
