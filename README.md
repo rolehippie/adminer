@@ -1,4 +1,4 @@
-# adminer
+# workspace
 
 [![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/adminer)
 [![General Workflow](https://github.com/rolehippie/adminer/actions/workflows/general.yml/badge.svg)](https://github.com/rolehippie/adminer/actions/workflows/general.yml)
@@ -55,7 +55,8 @@ List of required base plugins
 ```YAML
 adminer_base_plugins:
   - name: plugin
-    url: https://raw.githubusercontent.com/vrana/adminer/v{{ adminer_version }}/plugins/plugin.php
+    url: https://raw.githubusercontent.com/vrana/adminer/v{{ adminer_version 
+      }}/plugins/plugin.php
     class: AdminerPlugin
     state: "{{ 'present' if adminer_version is version('5.1.1', '<=') else 'absent'
       }}"
@@ -92,9 +93,10 @@ URL to download the release from
 #### Default value
 
 ```YAML
-adminer_download: https://github.com/vrana/adminer/releases/download/v{{ adminer_version
-  }}/adminer-{{ adminer_version }}{{ '-mysql' if adminer_mysql else '' }}{{ '-' +
-  adminer_language if adminer_language | default(False) else '' }}.php
+adminer_download: https://github.com/vrana/adminer/releases/download/v{{ 
+  adminer_version }}/adminer-{{ adminer_version }}{{ '-mysql' if adminer_mysql 
+  else '' }}{{ '-' + adminer_language if adminer_language | default(False) else 
+  '' }}.php
 ```
 
 ### adminer_extra_packages
@@ -226,9 +228,12 @@ Paths to write the custom PHP config to
 
 ```YAML
 adminer_php_paths:
-  - /etc/php/{{ adminer_php_versions[ansible_distribution_version] }}/apache2/conf.d/99-adminer.ini
-  - /etc/php/{{ adminer_php_versions[ansible_distribution_version] }}/cli/conf.d/99-adminer.ini
-  - /etc/php/{{ adminer_php_versions[ansible_distribution_version] }}/mods-available/adminer.ini
+  - /etc/php/{{ adminer_php_versions[ansible_distribution_version] 
+    }}/apache2/conf.d/99-adminer.ini
+  - /etc/php/{{ adminer_php_versions[ansible_distribution_version] 
+    }}/cli/conf.d/99-adminer.ini
+  - /etc/php/{{ adminer_php_versions[ansible_distribution_version] 
+    }}/mods-available/adminer.ini
 ```
 
 ### adminer_php_versions
@@ -257,7 +262,6 @@ adminer_version: 5.3.0
 ## Discovered Tags
 
 **_adminer_**
-
 
 ## Dependencies
 
