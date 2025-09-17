@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.5.0](https://github.com/rolehippie/adminer/compare/v3.4.0...v3.5.0) (2025-09-17)
+
+
+### Features
+
+* apply new repo structure and update linting and integrate noble ([c767fc6](https://github.com/rolehippie/adminer/commit/c767fc677f71b0d60d19c4c708bdc9bc1f1bef9e))
+
 ## [3.4.0](https://github.com/rolehippie/adminer/compare/v3.3.0...v3.4.0) (2025-09-15)
 
 
