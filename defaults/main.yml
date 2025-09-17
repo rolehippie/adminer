@@ -4,13 +4,13 @@
 adminer_version: 5.4.0
 
 # @var adminer_mysql:description: Install with mysql support only
-adminer_mysql: False
+adminer_mysql: false
 
 # @var adminer_language:description: Install with single translation
 adminer_language:
 
 # @var adminer_download:description: URL to download the release from
-adminer_download: "https://github.com/vrana/adminer/releases/download/v{{ adminer_version }}/adminer-{{ adminer_version }}{{ '-mysql' if adminer_mysql else '' }}{{ '-' + adminer_language if adminer_language | default(False) else '' }}.php"
+adminer_download: "https://github.com/vrana/adminer/releases/download/v{{ adminer_version }}/adminer-{{ adminer_version }}{{ '-mysql' if adminer_mysql else '' }}{{ '' if adminer_language is none else '-' + adminer_language }}.php"
 
 # @var adminer_mysql_packages:description: List of packages for mysql databases
 adminer_mysql_packages:
@@ -86,5 +86,6 @@ adminer_php_versions:
   "18.04": 7.2
   "20.04": 7.4
   "22.04": 8.1
+  "24.04": 8.3
 
 ...

@@ -1,4 +1,4 @@
-# workspace
+# adminer
 
 [![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/adminer)
 [![General Workflow](https://github.com/rolehippie/adminer/actions/workflows/general.yml/badge.svg)](https://github.com/rolehippie/adminer/actions/workflows/general.yml)
@@ -95,7 +95,7 @@ URL to download the release from
 ```YAML
 adminer_download: https://github.com/vrana/adminer/releases/download/v{{ 
   adminer_version }}/adminer-{{ adminer_version }}{{ '-mysql' if adminer_mysql 
-  else '' }}{{ '-' + adminer_language if adminer_language | default(False) else 
+  else '' }}{{ '-' + adminer_language if adminer_language | default(false) else 
   '' }}.php
 ```
 
@@ -247,6 +247,7 @@ adminer_php_versions:
   '18.04': 7.2
   '20.04': 7.4
   '22.04': 8.1
+  '24.04': 8.3
 ```
 
 ### adminer_version

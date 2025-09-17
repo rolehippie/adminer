@@ -48,7 +48,8 @@
   loop: "{{ adminer_base_plugins + adminer_general_plugins }}"
   loop_control:
     label: "{{ item.name }}"
-  when: item.state | default('present') == 'present'
+  when:
+    - item.state | default('present') == 'present'
   ansible.builtin.get_url:
     url: "{{ item.url | default(omit) }}"
     dest: "/usr/share/adminer/{{ item.name }}.php"
@@ -62,7 +63,8 @@
   loop: "{{ adminer_base_plugins + adminer_general_plugins }}"
   loop_control:
     label: "{{ item.name }}"
-  when: item.state | default('present') == 'absent'
+  when:
+    - item.state | default('present') == 'absent'
   ansible.builtin.file:
     path: "/usr/share/adminer/{{ item.name }}.php"
     state: absent
