@@ -95,8 +95,7 @@ URL to download the release from
 ```YAML
 adminer_download: https://github.com/vrana/adminer/releases/download/v{{ 
   adminer_version }}/adminer-{{ adminer_version }}{{ '-mysql' if adminer_mysql 
-  else '' }}{{ '-' + adminer_language if adminer_language | default(false) else 
-  '' }}.php
+  else '' }}{{ '' if adminer_language is none else '-' + adminer_language }}.php
 ```
 
 ### adminer_extra_packages
