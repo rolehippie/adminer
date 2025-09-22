@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.5.1](https://github.com/rolehippie/adminer/compare/v3.5.0...v3.5.1) (2025-09-22)
+
+
+### Bugfixes
+
+* add communityx.general dependency ([6686830](https://github.com/rolehippie/adminer/commit/66868308d5e0d45052340c51244e56a8f03dd457))
+
 ## [3.5.0](https://github.com/rolehippie/adminer/compare/v3.4.0...v3.5.0) (2025-09-17)
 
 
