@@ -265,6 +265,7 @@ adminer_version: 5.4.1
 
 ## Dependencies
 
+- [community.general](https://github.com/ansible-collections/community.general)
 - [rolehippie.apache](https://github.com/rolehippie/apache)
 
 ## License

@@ -15,6 +15,7 @@
 # Building and improving this Ansible role have been sponsored by my current and previous employers like **[Cloudpunks GmbH](https://cloudpunks.de)** and **[Proact Deutschland GmbH](https://www.proact.eu)**.
 # @end
 # @meta dependencies:value: >
+# [community.general](https://github.com/ansible-collections/community.general)
 # [rolehippie.apache](https://github.com/rolehippie/apache)
 # @end
 galaxy_info:
