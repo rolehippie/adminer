@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.0.0](https://github.com/rolehippie/adminer/compare/v3.5.2...v4.0.0) (2025-11-17)
+
+
+### Features
+
+* **major:** update dependency community.general to v12 ([#52](https://github.com/rolehippie/adminer/issues/52)) ([76c8c5f](https://github.com/rolehippie/adminer/commit/76c8c5f4df684add43f331966e04d678e4c1fb6e))
+
 ## [3.5.2](https://github.com/rolehippie/adminer/compare/v3.5.1...v3.5.2) (2025-09-29)
 
 
