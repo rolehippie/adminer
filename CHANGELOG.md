@@ -1,5 +1,15 @@
 # Changelog
 
+## [4.3.1](https://github.com/rolehippie/adminer/compare/v4.3.0...v4.3.1) (2026-02-09)
+
+### Dependencies
+
+* **patch:** update dependency vrana/adminer to v5.4.2 ([#73](https://github.com/rolehippie/adminer/issues/73)) ([74e6b8e](https://github.com/rolehippie/adminer/commit/74e6b8e8914e52a5aa5351c88c29b879f4071c4d))
+
+### Miscellaneous
+
+* **flake:** updated lockfile [skip ci] ([7362dd0](https://github.com/rolehippie/adminer/commit/7362dd0040fc3df82219d1db6df57c063b266577))
+
 ## [4.3.0](https://github.com/rolehippie/adminer/compare/v4.2.0...v4.3.0) (2026-02-02)
 
 ### Dependencies
