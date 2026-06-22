@@ -1,5 +1,18 @@
 # Changelog
 
+## [5.1.0](https://github.com/rolehippie/adminer/compare/v5.0.0...v5.1.0) (2026-06-22)
+
+### Dependencies
+
+* **minor:** update dependency community.general to >=13.1.0,<13.2.0 ([#81](https://github.com/rolehippie/adminer/issues/81)) ([c7b4c1e](https://github.com/rolehippie/adminer/commit/c7b4c1ec55e025fd8a51d33e6afe0653c3e1aaf8))
+
+### Miscellaneous
+
+* **flake:** updated lockfile [skip ci] ([dcedc1b](https://github.com/rolehippie/adminer/commit/dcedc1b12b4c41ece2ffe5ae0cbaeb6e0a4ab35a))
+* **flake:** updated lockfile [skip ci] ([b73ab0c](https://github.com/rolehippie/adminer/commit/b73ab0c0a90c5a5fdec5247ccedc9793da06abf4))
+* **flake:** updated lockfile [skip ci] ([3b0c196](https://github.com/rolehippie/adminer/commit/3b0c196f4f90f0c24ee959b5b90809e7268e721a))
+* **flake:** updated lockfile [skip ci] ([60b338a](https://github.com/rolehippie/adminer/commit/60b338a6bf374c32495d866709512d52c9004d9b))
+
 ## [5.0.0](https://github.com/rolehippie/adminer/compare/v4.6.0...v5.0.0) (2026-05-25)
 
 ### Dependencies
