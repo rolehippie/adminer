@@ -1,5 +1,13 @@
 # Changelog
 
+## [6.0.0](https://github.com/rolehippie/adminer/compare/v5.3.0...v6.0.0) (2026-08-10)
+
+### Dependencies
+
+* **major:** update dependency vrana/adminer to v6 ([#90](https://github.com/rolehippie/adminer/issues/90)) ([a4b1ba3](https://github.com/rolehippie/adminer/commit/a4b1ba3166f638dbbd8fa12c8c69a36991bd1eac))
+* **minor:** update dependency pipx:ansible-doctor to v8.4.0 ([#92](https://github.com/rolehippie/adminer/issues/92)) ([7e133bc](https://github.com/rolehippie/adminer/commit/7e133bcf2529c5dafd5d4c88ee9f5bea2c760086))
+* **patch:** update dependency python to v3.14.7 ([#89](https://github.com/rolehippie/adminer/issues/89)) ([cf64124](https://github.com/rolehippie/adminer/commit/cf64124db41abf91a8588dc3141522aa41d82f00))
+
 ## [5.3.0](https://github.com/rolehippie/adminer/compare/v5.2.0...v5.3.0) (2026-07-27)
 
 ## [5.2.0](https://github.com/rolehippie/adminer/compare/v5.1.1...v5.2.0) (2026-07-20)
