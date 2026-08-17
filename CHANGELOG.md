@@ -1,5 +1,16 @@
 # Changelog
 
+## [6.1.0](https://github.com/rolehippie/adminer/compare/v6.0.0...v6.1.0) (2026-08-17)
+
+### Dependencies
+
+* **minor:** update dependency community.general to >=13.3.0,<13.4.0 ([#94](https://github.com/rolehippie/adminer/issues/94)) ([1a00a46](https://github.com/rolehippie/adminer/commit/1a00a46e1d5f0e6ea01afa6052b70c573cb427e3))
+* **minor:** update dependency pipx:ansible-lint to v26.8.0 ([#96](https://github.com/rolehippie/adminer/issues/96)) ([ca9ed96](https://github.com/rolehippie/adminer/commit/ca9ed96e4a4179d5ceefe6230fe856350b070ea3))
+* **minor:** update dependency pipx:molecule to v26.8.0 ([#97](https://github.com/rolehippie/adminer/issues/97)) ([9b38205](https://github.com/rolehippie/adminer/commit/9b382050d14f87179523acf6ba1f13a0d487962c))
+* **patch:** update dependency pipx:ansible-core to v2.21.3 ([#93](https://github.com/rolehippie/adminer/issues/93)) ([3588aa1](https://github.com/rolehippie/adminer/commit/3588aa1d6987c15ccb4a2afa050da50ae6ebf85e))
+* **patch:** update dependency pre-commit to v4.6.2 ([#95](https://github.com/rolehippie/adminer/issues/95)) ([04fc776](https://github.com/rolehippie/adminer/commit/04fc776de2fc13fd83add65fd7fa6aca0db3931d))
+* **patch:** update dependency vrana/adminer to v6.0.1 ([#98](https://github.com/rolehippie/adminer/issues/98)) ([db74331](https://github.com/rolehippie/adminer/commit/db74331a18a8e1fa414894ea692a52256797cd76))
+
 ## [6.0.0](https://github.com/rolehippie/adminer/compare/v5.3.0...v6.0.0) (2026-08-10)
 
 ### Dependencies
