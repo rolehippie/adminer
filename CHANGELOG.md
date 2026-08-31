@@ -1,5 +1,11 @@
 # Changelog
 
+## [6.1.1](https://github.com/rolehippie/adminer/compare/v6.1.0...v6.1.1) (2026-08-31)
+
+### Dependencies
+
+* **patch:** update dependency pipx:ansible-doctor to v8.4.1 ([#99](https://github.com/rolehippie/adminer/issues/99)) ([15bdbd0](https://github.com/rolehippie/adminer/commit/15bdbd0ad71649ef6c4f3ddf2c7fb36327261f9c))
+
 ## [6.1.0](https://github.com/rolehippie/adminer/compare/v6.0.0...v6.1.0) (2026-08-17)
 
 ### Dependencies
