@@ -71,9 +71,9 @@ adminer_general_plugins: []
 
 # @var adminer_php_paths:description: Paths to write the custom PHP config to
 adminer_php_paths:
-  - "/etc/php/{{ adminer_php_versions[ansible_distribution_version] }}/apache2/conf.d/99-adminer.ini"
-  - "/etc/php/{{ adminer_php_versions[ansible_distribution_version] }}/cli/conf.d/99-adminer.ini"
-  - "/etc/php/{{ adminer_php_versions[ansible_distribution_version] }}/mods-available/adminer.ini"
+  - "/etc/php/{{ adminer_php_versions[ansible_facts['distribution_version']] }}/apache2/conf.d/99-adminer.ini"
+  - "/etc/php/{{ adminer_php_versions[ansible_facts['distribution_version']] }}/cli/conf.d/99-adminer.ini"
+  - "/etc/php/{{ adminer_php_versions[ansible_facts['distribution_version']] }}/mods-available/adminer.ini"
 
 # @var adminer_memory_limit:description: Max allowed memory to allocate by PHP
 adminer_memory_limit: 256M

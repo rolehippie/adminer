@@ -223,9 +223,9 @@ Paths to write the custom PHP config to
 
 ```YAML
 adminer_php_paths:
-  - /etc/php/{{ adminer_php_versions[ansible_distribution_version] }}/apache2/conf.d/99-adminer.ini
-  - /etc/php/{{ adminer_php_versions[ansible_distribution_version] }}/cli/conf.d/99-adminer.ini
-  - /etc/php/{{ adminer_php_versions[ansible_distribution_version] }}/mods-available/adminer.ini
+  - /etc/php/{{ adminer_php_versions[ansible_facts['distribution_version']] }}/apache2/conf.d/99-adminer.ini
+  - /etc/php/{{ adminer_php_versions[ansible_facts['distribution_version']] }}/cli/conf.d/99-adminer.ini
+  - /etc/php/{{ adminer_php_versions[ansible_facts['distribution_version']] }}/mods-available/adminer.ini
 ```
 
 ### adminer_php_versions
