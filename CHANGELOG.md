@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.2.0](https://github.com/rolehippie/adminer/compare/v6.1.1...v6.2.0) (2026-09-07)
+
+### Features
+
+* add separate requirements for molecule run ([4869f0e](https://github.com/rolehippie/adminer/commit/4869f0ee488ef1ee11efe245d53814a451a28736))
+* use new required facts as attributes ([03bedd4](https://github.com/rolehippie/adminer/commit/03bedd47a8b3ed48d2d459a29185a1bbf40a1227))
+
 ## [6.1.1](https://github.com/rolehippie/adminer/compare/v6.1.0...v6.1.1) (2026-08-31)
 
 ### Dependencies
