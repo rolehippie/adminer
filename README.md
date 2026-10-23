@@ -249,7 +249,7 @@ Version of the release to install
 #### Default value
 
 ```YAML
-adminer_version: 6.1.2
+adminer_version: 6.2.0
 ```
 
 ## Discovered Tags
