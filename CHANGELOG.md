@@ -1,5 +1,19 @@
 # Changelog
 
+## [7.0.0](https://github.com/rolehippie/adminer/compare/v6.6.0...v7.0.0) (2026-11-09)
+
+### Dependencies
+
+* **major:** update dependency community.general to v14 ([#125](https://github.com/rolehippie/adminer/issues/125)) ([15889a3](https://github.com/rolehippie/adminer/commit/15889a38b5ab49f76b238e1c6732d0f659a70fd5))
+* **minor:** update dependency vrana/adminer to v6.3.0 ([#126](https://github.com/rolehippie/adminer/issues/126)) ([0cb9c5c](https://github.com/rolehippie/adminer/commit/0cb9c5cde0951afcfe5a345c7e94de63b822dcb6))
+* **mise:** update dependency pipx:ansible-core to v2.22.0 ([#124](https://github.com/rolehippie/adminer/issues/124)) ([b1feca2](https://github.com/rolehippie/adminer/commit/b1feca224adfad3d957ef2fed8e7aecb34698c22))
+* **mise:** update dependency pipx:ansible-doctor to v8.4.4 ([#130](https://github.com/rolehippie/adminer/issues/130)) ([b4db4c2](https://github.com/rolehippie/adminer/commit/b4db4c2a0a022396646740d37e05da78ac87e6c3))
+* **mise:** update dependency pipx:ansible-lint to v26.11.0 ([#128](https://github.com/rolehippie/adminer/issues/128)) ([3c0afe9](https://github.com/rolehippie/adminer/commit/3c0afe908c8f0006b30c799ce8f5579c361d7675))
+* **mise:** update dependency pipx:molecule to v26.11.0 ([#129](https://github.com/rolehippie/adminer/issues/129)) ([b863667](https://github.com/rolehippie/adminer/commit/b863667bda9228c00d897c80bd86ead97b274184))
+* **mise:** update dependency prek to v0.5.10 ([#127](https://github.com/rolehippie/adminer/issues/127)) ([5bc06c8](https://github.com/rolehippie/adminer/commit/5bc06c81f4ea7dd046bf99f86282b18b473ff95c))
+* **mise:** update dependency prek to v0.5.9 ([#123](https://github.com/rolehippie/adminer/issues/123)) ([c5f169b](https://github.com/rolehippie/adminer/commit/c5f169bb3b14b6ff10df02feebd4b6350294e409))
+* **mise:** update node.js to v26 ([#122](https://github.com/rolehippie/adminer/issues/122)) ([8eafd13](https://github.com/rolehippie/adminer/commit/8eafd13f67e6859a53923bfd479aea7acf7beed3))
+
 ## [6.6.0](https://github.com/rolehippie/adminer/compare/v6.5.0...v6.6.0) (2026-10-26)
 
 ### Dependencies
