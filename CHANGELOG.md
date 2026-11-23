@@ -1,5 +1,15 @@
 # Changelog
 
+## [7.0.1](https://github.com/rolehippie/adminer/compare/v7.0.0...v7.0.1) (2026-11-23)
+
+* automated readme update [skip ci] ([9f6b164](https://github.com/rolehippie/adminer/commit/9f6b1643bb930966f3ad16ae45c6f8ce10669aa5))
+* automated release update [skip ci] ([2c48b93](https://github.com/rolehippie/adminer/commit/2c48b9345ed83d491864a851e2ce2da22cefa0be))
+
+### Dependencies
+
+* **mise:** update dependency prek to v0.5.11 ([#131](https://github.com/rolehippie/adminer/issues/131)) ([3c77655](https://github.com/rolehippie/adminer/commit/3c77655040b142f716d67a13e8348e031e454e84))
+* **patch:** update dependency vrana/adminer to v6.3.1 ([#132](https://github.com/rolehippie/adminer/issues/132)) ([4d60de3](https://github.com/rolehippie/adminer/commit/4d60de36e99c564fe892ec5253d67e3aaa2e1151))
+
 ## [7.0.0](https://github.com/rolehippie/adminer/compare/v6.6.0...v7.0.0) (2026-11-09)
 
 ### Dependencies
